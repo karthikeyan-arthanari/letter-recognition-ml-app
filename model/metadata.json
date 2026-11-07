@@ -1,0 +1,71 @@
+{
+  "target": "letter",
+  "features": [
+    "xbox",
+    "ybox",
+    "width",
+    "height",
+    "onpix",
+    "xbar",
+    "ybar",
+    "x2bar",
+    "y2bar",
+    "xybar",
+    "x2ybar",
+    "xy2bar",
+    "xedge",
+    "xedgey",
+    "yedge",
+    "yedgex"
+  ],
+  "classes": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z"
+  ],
+  "seed": 42,
+  "test_size": 0.2,
+  "hyperparameters": {
+    "knn_k": 1,
+    "svm_c": 30.0,
+    "cv_knn_accuracy": {
+      "1": 0.9324,
+      "3": 0.9253,
+      "5": 0.9239,
+      "7": 0.9184,
+      "9": 0.9132,
+      "11": 0.9099
+    },
+    "cv_svm_accuracy": {
+      "1.0": 0.925,
+      "10.0": 0.961,
+      "30.0": 0.9616
+    }
+  },
+  "n_rows_after_dedup": 18668,
+  "n_train": 14934,
+  "n_test": 3734
+}
