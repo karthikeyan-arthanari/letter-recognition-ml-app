@@ -18,7 +18,7 @@ This is a **26-class classification problem**. The goal of the assignment is to 
 compare them with six evaluation metrics (Accuracy, AUC, Precision, Recall, F1, MCC), and expose the trained models through a Streamlit web
 app where a test CSV can be uploaded and evaluated.
 
-## b. Dataset description  [1 mark]
+## b. Dataset description
 
 | Item | Value |
 |---|---|
@@ -38,7 +38,7 @@ Feature columns: `xbox, ybox` (box position), `width, height` (box size), `onpix
 The data was generated from 20 different fonts that were randomly distorted, so many rows of the same letter look similar to each other,
 which matters for how the models behave (see the observations below).
 
-## c. GitHub repository  [1 mark]
+## c. GitHub repository
 
 `<PASTE YOUR GITHUB REPO LINK HERE>`
 
@@ -67,7 +67,7 @@ python model/train_models.py      # optional: re-creates splits, models and metr
 streamlit run app.py
 ```
 
-## d. Models used  [5 marks]
+## d. Models used
 
 All five models were trained on the same training split and evaluated on the same held-out test split.
 Because the target has 26 classes, Precision / Recall / F1 are **macro-averaged**, AUC is the **one-vs-rest macro average**,
@@ -87,7 +87,7 @@ The settings of kNN (k) and SVM (C) were chosen by 3-fold cross-validation on th
 
 (Bold = best value in the column. The same numbers are in `model/metrics_summary.csv` and in the “Compare all models” tab of the app.)
 
-### Observations on model performance  [3 marks]
+### Observations on model performance
 
 | ML Model Name | Observation about model performance |
 |---|---|
@@ -104,7 +104,7 @@ about 2.5 points of accuracy / MCC. The ranking by MCC is **SVM (0.968) > kNN (0
 Naive Bayes (0.611)**. Models that can draw flexible non-linear boundaries (SVM, kNN) are clearly better than the linear and
 independence-based ones on this problem. kNN is a close, simpler alternative if training time matters.
 
-## Streamlit app features  [4 marks]
+## Streamlit app features
 
 1. **Dataset upload** – CSV upload in the sidebar (test data only; must contain the 16 feature columns, and a `letter` column if metrics are wanted). A checkbox can load the bundled `test_data.csv`.
 2. **Model selection** – dropdown with the five models.
